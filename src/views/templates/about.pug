@@ -1,0 +1,62 @@
+section.about#about
+  div.container
+    div.smart-row
+      div.smart-col-50
+        div.about-img
+          img(src="img/about.jpg")
+      div.smart-col-50
+        div.about-content
+          h2.about-title Обо мне
+          div.about-text
+            p
+              | Меня зовут Светлана, моя основная специализация -
+              br
+              | веб-разработка.
+              br
+              | Более десяти лет я занимаюсь созданием веб-проектов.
+              br
+              | Реализую различные задачи: проектирование, адаптивная верстка, установка на CMS, SEO оптимизация, написание кастомного функционала по техзаданию заказчика.
+            div.about-contact
+              | Связаться со мной можно:
+              ul.about-list
+                li
+                  img(src="img/svg/arrow.svg")
+                  span
+                    | через
+                    a.about-list-link(href="/") форму обратной связи
+                    |;
+                li
+                  img(src="img/svg/arrow.svg")
+                  span
+                    | написать на email
+                    a.about-list-email(href="mailto:"+email) #{email}
+                    |;
+                li
+                  img(src="img/svg/arrow.svg")
+                  | через мессенджеры
+                  | #{phone} (Viber, Telegram)
+            p.about-black Буду рада сотрудничеству!
+section.skills
+  div.container
+    h2.section-title Знания и технологии
+    div.smart-row.skills-row
+      div.smart-col-30
+        div.skills-box.blue
+          h3.skills-title CMS
+          div.skills-note Работаю с CMS
+          div.skills-text
+            div OpenCart 3.0.2, Wordpress, Modx, Umi, Bitrix
+            div.skills-text-s
+              | Есть опыт работы с Laravel (backend и frontend). Настройка cdn c Aws.
+              br
+              | В процессе освоения Nuxt и SSR
+      div.smart-col-30
+        div.skills-box.aqua
+          h3.skills-title FRONTEND
+          div.skills-note
+          div.skills-text Jquery, Jquery UI, Vue, Greensock, Ajax, Axios, Gulp, Sass, Pug, Twig, Html, Css, SmartGrid, CSS Flexbox
+      div.smart-col-30
+        div.skills-box.pink
+          h3.skills-title DESIGN
+          div.skills-note Графические редакторы
+          div.skills-text Photoshop, Sketch, Illustrator. На данный момент работаю с Figma.

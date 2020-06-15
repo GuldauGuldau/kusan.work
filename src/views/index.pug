@@ -1,0 +1,29 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Разработчик сайтов"
+
+block content
+	main
+		- var email = "ku2mina5vetl@yandex.ru"
+		- var phone = "+7 (904) 634-38-92"
+		-
+			var menus = [
+				{name:"Главная", href:"#home"},
+				{name:"Обо мне", href:"#about"},
+				{name:"Мои работы", href:"#portfolio"},
+				{name: "Услуги и цены", href: "#price"},
+				{name: "Контакты", href: "#contact"}
+			]
+		include templates/banner.pug
+		include templates/navbar.pug
+		include templates/about.pug
+		include templates/gallery.pug
+		include templates/price.pug
+		include templates/contact.pug
+		include templates/footer.pug
+		include templates/menu.pug
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

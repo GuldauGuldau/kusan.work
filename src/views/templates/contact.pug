@@ -1,0 +1,19 @@
+section.contact#contact
+  div.container
+    h2.section-title Свяжитесь со мной
+    div.section-desc
+      | Обращайтесь ко мне с любым вопросом.
+      <br>
+      | Заполните эту форму или напишите на почту
+      b
+        |  #{email}
+    div.contact-form
+      include form.pug
+    div.contact-messenger
+      div.contact-messenger-item
+        img(src="img/svg/viber_black.svg")
+        span Viber
+      div.contact-messenger-item
+        img(src="img/svg/telegram_black.svg")
+        span Telegram
+      div.contact-messenger-text #{phone}
